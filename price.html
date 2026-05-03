@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <title>BudgetSmart - Price Comparison</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="dashboard">
+            <div class="header">
+                <h1>💰 BudgetSmart</h1>
+                <p>Sasta dhundo, paisa bachao! 🛒</p>
+            </div>
+            <!--- Search Section -->
+            <h2>🔍 Item Search karo</h2>
+            <input type="text" id="search-item" placeholder="Kya dhundna hai? (jaise: Atta,Rice, Dal)" />
+            <button class="btn" onclick="searchItem()">Search</button>
+            <div>
+            
+            <!--- Results Section --->
+            <div class="card">
+                <h2>📊 Price Comparison</h2>
+                <div id = "results">
+                    <p style="color:#888;">koi item search karo upar se!</p>"
+
+            </div>
+            </div>
+
+            <!--Back Button -->
+            <button class="btn" onclick="window.location.href='dashboard.html'">
+                ⬅ Dashboard Pe Wapas Jao
+            </button>
+        </div>
+        <script src="price.js"></script> 
+        
+    </body>
+</html>

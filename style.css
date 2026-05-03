@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'segoe UI',sans-serif;
+}
+
+body {
+    background-color:#f0f4f8;
+   
+   min-height: 100vh;
+}
+
+.hero {
+    background-color: whitesmoke;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.btn{
+    margin-top: 25px;
+    display: inline-block;
+    background-color: #2d6a4f;
+    color:white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #1b4332;
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2d6a4f;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.card input:focus {
+  border-color: #2d6a4f;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.card span {
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list li {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+}

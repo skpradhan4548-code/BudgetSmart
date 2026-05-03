@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BudgetSmart - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+
+      <div class="header">
+        <h1>💰 BudgetSmart</h1>
+        <p>Namaste! Apna budget manage karo smartly</p>
+      </div>
+
+      <div class="card">
+        <h2>📥 Monthly Income</h2>
+        <input type="number" id="income" placeholder="Apni monthly income likho (₹)" />
+        <button class="btn" onclick="saveBudget()">Save</button>
+      </div>
+
+      <div class="card">
+        <h2>📊 Budget Summary</h2>
+        <p>Total Income: <span id="show-income">₹0</span></p>
+        <p>Total Spent: <span id="show-spent">₹0</span></p>
+        <p>Remaining: <span id="show-remaining">₹0</span></p>
+      </div>
+
+      <div class="card">
+        <h2>➕ Add Expense</h2>
+        <input type="text" id="exp-name" placeholder="Expense ka naam (jaise Grocery)" />
+        <input type="number" id="exp-amount" placeholder="Amount (₹)" />
+        <button class="btn" onclick="addExpense()">Add</button>
+      </div>
+
+      <div class="card">
+        <h2>🧾 Expense List</h2>
+        <ul id="expense-list">
+          <li>Abhi koi expense nahi!</li>
+        </ul>
+      </div>
+      </div>  <!-- expense list card band -->
+
+      <!-- Quick Links -->
+      <div class="card">
+        <h2>🔗 Quick Links</h2>
+        <button class="btn" onclick="window.location.href='price.html'">
+          🛒 Price Comparison
+        </button>
+         <button class="btn" onclick="window.location.href='tips.html'" style="margin-top: 10px;">
+          💡 Saving Tips
+        </button>
+      </div>
+
+    </div>  <!-- dashboard band -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

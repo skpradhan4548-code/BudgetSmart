@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BudgetSmart - Saving Tips</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+
+      <div class="header">
+        <h1>💰 BudgetSmart</h1>
+        <p>Smart saving tips — paisa bachao! 💡</p>
+      </div>
+
+      <!-- Input Section -->
+      <div class="card">
+        <h2>💬 Apni Problem Batao</h2>
+        <input type="text" id="user-problem" placeholder="Jaise: Grocery pe bahut paisa ja raha hai..." />
+        <button class="btn" onclick="getTips()">Tips Do! 💡</button>
+      </div>
+
+      <!-- Tips Section -->
+      <div class="card">
+        <h2>💡 Saving Tips</h2>
+        <div id="tips-result">
+          <p style="color: #888;">Upar apni problem likho — AI tips dega!</p>
+        </div>
+      </div>
+
+      <!-- Back Button -->
+      <button class="btn" onclick="window.location.href='dashboard.html'">
+        ⬅ Dashboard Pe Wapas Jao
+      </button>
+
+    </div>
+    <script src="tips.js"></script>
+  </body>
+</html>
